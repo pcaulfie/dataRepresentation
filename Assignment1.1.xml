@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- XML declaration stating character encoding is the default UTF-8  -->
+<library><!-- Create an root element called library that is the parent of all other elements-->
+  <book category="technicalBooks"> <!-- Create an element book and assign attribute equal to catalog name to which the book belongs-->
+    <title>Artificial Intelligence: A Modern Approach</title><!-- Add element contents 'title' and insert book title between tags -->
+    <author>Stuart Russell and Peter Norvig</author><!-- Add element contents 'author' and insert author name between tags -->
+    <isbn>123456789</isbn><!-- Add element contents 'isbn' and insert isbn number between tags -->
+  </book><!-- closing element tag -->
+  <book category="technicalBooks"> <!-- Create an element book and assign attribute equal to catalog name to which the book belongs-->
+    <title>Artificial Intelligence</title><!-- Add element contents 'title' and insert book title between tags -->
+    <author>Margaret A. Boden</author><!-- Add element contents 'author' and insert author name between tags -->
+    <isbn>987654321</isbn><!-- Add element contents 'isbn' and insert isbn number between tags -->
+  </book>
+  <book category="cookeryBooks"> <!-- Create an element book and assign attribute equal to catalog name to which the book belongs-->
+    <title>Mary Berry's Simple Comforts</title><!-- Add element contents 'title' and insert book title between tags -->
+    <author>Mary Berry</author><!-- Add element contents 'author' and insert author name between tags -->
+    <isbn>454545454</isbn><!-- Add element contents 'isbn' and insert isbn number between tags -->
+  </book>
+  <book category="cookeryBooks"> <!-- Create an element book and assign attribute equal to catalog name to which the book belongs-->
+    <title>Cook, Eat, Repeat</title><!-- Add element contents 'title' and insert book title between tags -->
+    <author>Nigella Lawson</author><!-- Add element contents 'author' and insert author name between tags -->
+    <isbn>787878787</isbn><!-- Add element contents 'isbn' and insert isbn number between tags -->
+  </book>
+</library><!-- closing root tag -->
