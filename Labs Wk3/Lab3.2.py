@@ -19,38 +19,38 @@ employee_writer = csv.writer(employee_file, delimiter=',', quotechar='"', quotin
 
 
 
-#rows = soup.findAll("tr")
+rows = soup.findAll("tr")
 # return a list of elements with tr tagline and sore in memory
-#for row in rows:
-#   iterate through rows  
+for row in rows:
+    #iterate through rows  
     #print(row)
     # print rows
-    #dataList = []
+    dataList = []
     # create an array call dataList 
-    #cols = row.findAll("td")
+    cols = row.findAll("td")
     # return a list of elements with td tagline and sore in cols
 
-    #for col in cols:
+    for col in cols:
     # iterate through cols
-        #dataList.append(col.text)
+        dataList.append(col.text)
         # append text element into array dataList
-    #employee_writer.writerow(dataList)
+    employee_writer.writerow(dataList)
     # to write row, pass list  
 
-listings = soup.findAll("table", class_="table" )
+#listings = soup.findAll("table", class_="table" )
 
-for listing in listings:
-    entryList = []
+#for listing in listings:
+#    entryList = []
     
-    reg = listing.find(th="Reg").text
-    entryList.append(reg)
-    make = listing.find(th="Make").text
-    entryList.append(make)
-    model = listing.find(th="Model").text
-    entryList.append(model)
-    price = listing.find(th="Price").text
-    entryList.append(price)
+#    reg = listing.find(th="Reg").text
+#    entryList.append(reg)
+#    make = listing.find(th="Make").text
+#    entryList.append(make)
+#    model = listing.find(th="Model").text
+#    entryList.append(model)
+#   price = listing.find(th="Price").text
+#    entryList.append(price)
 
-    employee_writer.writerow(entryList)
+#   employee_writer.writerow(entryList)
 
     
